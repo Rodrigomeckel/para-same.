@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto Cascata</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow-y: scroll; /* Habilita o scroll */
+            background-color: #ff1493; /* Fundo escuro para destacar o neon */
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .text {
+            font-size: 5vw; /* Ajusta o tamanho do texto com base na largura da tela */
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            transition: transform 0.1s ease-out; /* Suaviza o movimento */
+            max-width: 80%; /* Limita a largura do texto */
+            text-align: center;
+            color: #0ff; /* Cor do texto (Ciano para o efeito neon) */
+            text-shadow: 
+                0 0 20px #0ff, 
+                0 0 10px #0ff, 
+                0 0 15px rgb(22, 46, 46), 
+                0 0 20px #ff00ff, 
+                0 0 30px #ff00ff, 
+                0 0 40px #630063, 
+                0 0 50px #ff00ff, 
+                0 0 75px #ff00ff; /* Efeito de brilho neon */
+        }
+        /* Adiciona um pequeno ajuste para telas muito pequenas */
+        @media (max-width: 600px) {
+            .text {
+                font-size: 7vw; /* Aumenta o texto para telas pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text" id="text">
+            Oi Sâmela, espero que esteja bem, estou fazendo esse texto, porém não sei nem por ondem começar, já são <br>
+
+ 5h da manhã eu entro as 7h e não consegui colocar a cebeça no travesseiro. <br>
+ 
+ Oque aconteceu mais cedo está remoendo na minha cabeça, eu sei que não tem justificava, porém eu preciso <br>
+
+ Demostrar para você que eu realmente quero pedir desculpas de verdade, e como não sei onde você mora para mandar chocolate ou alguma coisa para você <br>
+
+ o único jeito que pensei foi esse, fazendo o que faço de melhor. <br><br>
+
+Bom, sobre oque aconteceu não posso me justificar, mas eu jamais faria aquilo sabendo situação que você estava <br>
+
+eu fiquei muito triste depois daquilo de verdade, e esse texto não é nem 1% do que quero falar para você, pense que você estava se afastando por me achar sem graça ou algo do tipo <br>
+
+ e pensei que se eu mostrasse um outro lado, seu interesse voltaria, mas estava errado, espero que de verdade não pare de falar comigo pelo que houve, eu gosto realmente de você como pessoa, se eu fosse qualquer outro mlk tenho certeza que te bloquearia e é isso, mas eu não!, estou aqui para mostrar para você que mereço, e novamente, peço desculpas. <br> E espero que dê tudo certo com sua vó
+        </div>
+    </div>
+
+    <script>
+        const textElement = document.getElementById('text');
+
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;  // Captura a posição do scroll
+            textElement.style.transform = `translateY(${scrollPosition * 0.2}px)`;  // Desce com a rolagem
+        });
+    </script>
+</body>
+</html>

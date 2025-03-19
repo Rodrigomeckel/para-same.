@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="valentines-day-card">
+        <input id="open" type="checkbox">
+        <label class="open" for="open"></label>
+      <div class="card-front">
+        <div class="note">Clique para abir</div>
+      </div>
+        
+        <div class="card-inside">
+          <div class="text-one">Clique em ler
+          </div>
+          <div class="heart"></div>
+          <div class="smile"></div>
+          <div class="eyes"></div>
+      </div>
+
+      <div class="buttons-container">
+        <form action="/quer-namorar-comigo/quer-namorar-comigo/index3.html" method="get">
+          <button type="submit">LER</button>
+      </form>
+      </div>
+      </div>
+
+      <style>
+        .center-text {
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: white;
+            text-align: center;
+            z-index: 10; /* Garante que o texto ficará acima dos outros elementos */
+        }
+
+        .buttons-container {
+            .bottom-button {
+  position: fixed;
+  bottom: 0;
+  left: 100%;
+  transform: translateX(-50%);
+  padding: 30px 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 100px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000; /* Garante que o botão ficará acima de outros elementos */
+}
+
+        }
+
+        .buttons-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            transition: background-color 0.3s;
+        }
+
+        .buttons-container button:hover {
+            background-color: #ff1493;
+        }
+
+        /* Garantir que a área dos botões tenha largura suficiente */
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+    </style>
+    
+</body>
+</html>

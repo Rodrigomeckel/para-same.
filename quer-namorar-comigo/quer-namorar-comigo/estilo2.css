@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
+    overflow-y: scroll;
+}
+
+.container {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cascata-text {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 1s ease-out;
+}
+
+/* Estilo para a classe que ativa a animação */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
